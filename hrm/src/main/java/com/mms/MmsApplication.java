@@ -9,8 +9,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan("com.mms.mapper")
 @SpringBootApplication
 @EnableTransactionManagement // 事务
-public class HrmApplication {
+public class MmsApplication {
     public static void main(String[] args) {
-        SpringApplication.run(HrmApplication.class, args);
+        SpringApplication.run(MmsApplication.class, args);
     }
 }

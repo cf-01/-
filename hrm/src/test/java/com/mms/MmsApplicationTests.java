@@ -34,7 +34,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class HrmApplicationTests {
+class MmsApplicationTests {
 
     @Autowired
     private StaffService staffService;

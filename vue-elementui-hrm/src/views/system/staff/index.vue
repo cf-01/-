@@ -97,17 +97,31 @@
 
     <el-dialog title="排班信息" :visible.sync="officeDialog.isShow">
       <!--  当前行的用户姓名 -->
-      <div style="margin-bottom: 10px">当前用户：{{officeDialog.officeData.name}}</div>
+      <div style="margin-bottom: 10px">当前用户：{{ officeDialog.officeData.name }}</div>
       <!--  日历    -->
-      <div>
-        <el-calendar :value="selectedDate" @change="handleDateChange"
-                     @day-click="handleDayClick"></el-calendar>
+      <div class="calendar">
+        <schedule-calendar :month="currentMonth" :staff="selectedStaff"></schedule-calendar>
+        <span slot="footer" class="dialog-footer">
+      </span>
       </div>
+
       <div slot="footer" class="dialog-footer">
         <el-button @click="officeDialog.isShow = false">取消</el-button>
         <el-button type="primary" @click="handleSetOffice">确定</el-button>
       </div>
     </el-dialog>
+
+<!--    <el-dialog title="排版详情" :visible.sync="officeDetailDialog.isShow">
+      &lt;!&ndash;  当前行的用户姓名 &ndash;&gt;
+      <div style="margin-bottom: 10px">当前用户：{{ officeDialog.officeData.name }}</div>
+      <div>
+        &lt;!&ndash;        &ndash;&gt;
+      </div>
+      <div slot="footer" class="dialog-footer">
+        <el-button @click="officeDetailDialog.isShow = false">取消</el-button>
+        <el-button type="primary" @click="officeDetailDialog.isShow = false">确定</el-button>
+      </div>
+    </el-dialog>-->
 
     <div style="margin-bottom: 10px">
       <el-upload :action="importApi" :headers="headers" accept="xlsx" :show-file-list="false"
@@ -276,15 +290,19 @@ import {
   getList,
   getRole,
   setRole
-} from '../../../api/staff'
+} from '@/api/staff'
 
-import {getAll} from '../../../api/role'
+import {getAll} from '@/api/role'
 
-import {getAllDept} from '../../../api/dept'
+import {getAllDept} from '@/api/dept'
 import {mapState} from 'vuex'
+import ScheduleCalendar from "@/views/system/ScheduleCalendar/index.vue";
 
 export default {
   name: 'Staff',
+  components: {
+    ScheduleCalendar
+  },
   data() {
     return {
       dialogForm: {
@@ -310,6 +328,9 @@ export default {
         },
         checkedData: []
       },
+      officeDetailDialog: {
+        isShow: false
+      },
       table: {
         tableData: [],
         pageConfig: {
@@ -321,8 +342,14 @@ export default {
       ids: [],
       staffId: 0, // 默认为0
       subDeptList: [],
-      selectedDate: null
+      selectedStaff: {
+        id:0
+      },
+      currentMonth: new Date(),
+      scheduleDialogVisible: false
     }
+  },
+  created() {
   },
   computed: {
     ...mapState('token', ['token']),
@@ -491,13 +518,13 @@ export default {
         }
       )
     },
-    setOffice (staff) {
+    setOffice(staff) {
       this.staffId = staff.id
       this.officeDialog.officeData.name = staff.name
       this.officeDialog.isShow = true
-      // 获取改月班次信息
+      this.selectedStaff.id = this.staffId
     },
-    handleSetRole () {
+    handleSetRole() {
       setRole(this.staffId, this.roleDialog.checkedData).then(
         response => {
           if (response.code === 200) {
@@ -509,49 +536,10 @@ export default {
         }
       )
     },
-    handleSetOffice () {
+    handleSetOffice() {
       // 直接关闭
       this.officeDialog.isShow = false
-    },
-    handleDateChange (date) {
-      // 将选取的年月传递给后端接口
-      const year = date.getFullYear()
-      const month = date.getMonth() + 1
-      this.$axios.get(`/api/calendar?year=${year}&month=${month}`)
-        .then(response => {
-          // 处理后端返回的数据
-          const markedDates = response.data.markedDates
-          // 渲染回Calendar组件中
-          this.selectedDate = markedDates.map(date => new Date(date))
-        })
-        .catch(error => {
-          console.error(error)
-        })
-    },
-    handleDayClick (date) {
-      const clickedDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
-      // 判断当前日期是否已被标记
-      if (this.selectedDate.includes(clickedDate)) {
-        // 如果已被标记，进行修改操作
-        this.editMarkedDate(clickedDate)
-      } else {
-        // 如果未被标记，进行新增标记操作
-        this.addMarkedDate(clickedDate)
-      }
-    },
-    editMarkedDate (date) {
-      // 在这里实现修改标记日期的逻辑
-      // 可以弹出对话框或其他方式供用户进行修改操作
-      console.log('Edit marked date:', date)
-    },
-    addMarkedDate (date) {
-      // 在这里实现新增标记日期的逻辑
-      // 可以弹出对话框或其他方式供用户进行新增操作
-      console.log('Add marked date:', date)
     }
-  },
-  created() {
-    this.loading()
   }
 }
 </script>
