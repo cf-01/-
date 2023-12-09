@@ -9,11 +9,11 @@
         <relativePath/>
         <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.qiujie</groupId>
-    <artifactId>hrm</artifactId>
+    <groupId>com.mms</groupId>
+    <artifactId>mms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hrm</name>
-    <description>人力资源管理系统</description>
+    <name>mms</name>
+    <description>商场管理系统</description>
     <properties>
         <java.version>17</java.version>
         <java.version>17</java.version>

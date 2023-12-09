@@ -14,7 +14,7 @@
         style="width: 20px; position: relative; top: 5px; margin-right:2px"
       />
       <span style="color: #fff; font-weight: bold">
-        {{ isCollapse ? '' : '人力资源管理系统' }}
+        {{ isCollapse ? '' : '商场管理系统' }}
       </span>
     </div>
     <el-menu-item

@@ -9,7 +9,7 @@
           style="width: 20px; position: relative; top: 5px;"
         />
         <b style="color: #303133; font-weight: bold">
-          人力资源管理系统
+          商场管理系统
         </b>
       </div>
       <el-form :rules="rules" :model="staff" ref="loginForm">

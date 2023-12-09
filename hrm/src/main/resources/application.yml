@@ -9,7 +9,6 @@ spring:
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.zaxxer.hikari.HikariDataSource
-
   mvc:
     path match:
       matching-strategy: ant-path-matcher
@@ -18,14 +17,12 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  # 扫描通用枚举包
-  type-enums-package: com.qiujie.enums
+  type-enums-package: com.mms.enums
 
-
+# 文件存储位置
 file:
   upload:
-    path: E:/project/idea/hrm/file/ # 文件存储位置
-
+    path: C:/Users/CF/Desktop/hrm-master/hrm/file
 
 
 
