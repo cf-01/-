@@ -143,6 +143,7 @@ public class HomeService {
 
 
 
+
     // 统计各部门的人数情况
     public ResponseDTO getDepartmentData() {
         List<Dept> parentList = this.deptService.list(new QueryWrapper<Dept>().eq("parent_id", 0));

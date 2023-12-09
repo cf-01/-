@@ -95,6 +95,20 @@
       </div>
     </el-dialog>
 
+    <el-dialog title="排班信息" :visible.sync="officeDialog.isShow">
+      <!--  当前行的用户姓名 -->
+      <div style="margin-bottom: 10px">当前用户：{{officeDialog.officeData.name}}</div>
+      <!--  日历    -->
+      <div>
+        <el-calendar :value="selectedDate" @change="handleDateChange"
+                     @day-click="handleDayClick"></el-calendar>
+      </div>
+      <div slot="footer" class="dialog-footer">
+        <el-button @click="officeDialog.isShow = false">取消</el-button>
+        <el-button type="primary" @click="handleSetOffice">确定</el-button>
+      </div>
+    </el-dialog>
+
     <div style="margin-bottom: 10px">
       <el-upload :action="importApi" :headers="headers" accept="xlsx" :show-file-list="false"
                  :on-success="handleImportSuccess" :multiple="false"
@@ -213,7 +227,7 @@
         </el-table-column>
         <el-table-column prop="address" label="地址" min-width="200" align="center"/>
         <el-table-column prop="remark" label="备注" min-width="200" align="center"/>
-        <el-table-column label="操作" width="280" fixed="right" align="center">
+        <el-table-column label="操作" width="400" fixed="right" align="center">
           <template slot-scope="scope">
             <el-button size="mini" type="primary" @click="handleEdit(scope.row)"
             >编辑 <i class="el-icon-edit"></i
@@ -232,6 +246,8 @@
               ></el-button>
             </el-popconfirm>
             <el-button type="warning" @click="selectRole(scope.row.id)">分配角色 <i class="el-icon-user-solid"/>
+            </el-button>
+            <el-button type="warning" @click="setOffice(scope.row)">排班 <i class="el-icon-user-solid"/>
             </el-button>
           </template>
         </el-table-column>
@@ -262,14 +278,14 @@ import {
   setRole
 } from '../../../api/staff'
 
-import { getAll } from '../../../api/role'
+import {getAll} from '../../../api/role'
 
-import { getAllDept } from '../../../api/dept'
-import { mapState } from 'vuex'
+import {getAllDept} from '../../../api/dept'
+import {mapState} from 'vuex'
 
 export default {
   name: 'Staff',
-  data () {
+  data() {
     return {
       dialogForm: {
         type: 'add', // add为新增，edit为编辑
@@ -286,6 +302,14 @@ export default {
         roleData: [],
         checkedData: []
       },
+      officeDialog: {
+        isShow: false,
+        officeData: {
+          name: '',
+          workTime: []
+        },
+        checkedData: []
+      },
       table: {
         tableData: [],
         pageConfig: {
@@ -296,21 +320,22 @@ export default {
       },
       ids: [],
       staffId: 0, // 默认为0
-      subDeptList: []
+      subDeptList: [],
+      selectedDate: null
     }
   },
   computed: {
     ...mapState('token', ['token']),
-    headers () {
-      return { token: this.token }
+    headers() {
+      return {token: this.token}
     },
     // 获取导入数据的接口
-    importApi () {
+    importApi() {
       return getImportApi()
     }
   },
   methods: {
-    getDept () {
+    getDept() {
       // 获取所有部门
       getAllDept().then(response => {
         const list = []
@@ -327,13 +352,13 @@ export default {
       })
     },
     // 点击新增按钮，弹出对话框
-    handleAdd () {
+    handleAdd() {
       this.dialogForm.isShow = true
       this.dialogForm.type = 'add'
       this.dialogForm.formData = {}
       this.getDept()
     },
-    handleDelete (id) {
+    handleDelete(id) {
       deleteOne(id).then(
         response => {
           if (response.code === 200) {
@@ -345,7 +370,7 @@ export default {
         }
       )
     },
-    handleDeleteBatch () {
+    handleDeleteBatch() {
       deleteBatch(this.ids).then(response => {
         if (response.code === 200) {
           this.$message.success('批量删除成功！')
@@ -355,13 +380,13 @@ export default {
         }
       })
     },
-    handleEdit (row) {
+    handleEdit(row) {
       this.dialogForm.isShow = true
       this.dialogForm.type = 'edit'
       this.dialogForm.formData = row
       this.getDept()
     },
-    confirm () {
+    confirm() {
       // 通过type来判断是新增还是编辑
       if (this.dialogForm.type === 'add') {
         add(this.dialogForm.formData).then((response) => {
@@ -385,30 +410,30 @@ export default {
         })
       }
     },
-    search () {
+    search() {
       this.loading()
     },
     // 重置搜索表单
-    reset () {
+    reset() {
       this.searchForm.formData = {}
       this.loading()
     },
-    handleSizeChange (size) {
+    handleSizeChange(size) {
       this.table.pageConfig.size = size
       this.loading()
     },
-    handleCurrentChange (current) {
+    handleCurrentChange(current) {
       this.table.pageConfig.current = current
       this.loading()
     },
-    handleSelectionChange (list) {
+    handleSelectionChange(list) {
       this.ids = list.map(item => item.id)
     },
-    handleStatusChange (row) {
+    handleStatusChange(row) {
       edit(row)
     },
     // 加载数据
-    loading () {
+    loading() {
       getAllDept().then(response => {
         const list = []
         response.data.forEach(dept => {
@@ -435,10 +460,10 @@ export default {
       })
     },
     // 导出数据
-    exportData () {
+    exportData() {
       window.open(getExportApi())
     },
-    handleImportSuccess (response) {
+    handleImportSuccess(response) {
       if (response.code === 200) {
         this.$message.success('数据导入成功！')
         this.loading()
@@ -446,7 +471,7 @@ export default {
         this.$message.error('数据导入失败！')
       }
     },
-    selectRole (id) {
+    selectRole(id) {
       this.staffId = id
       this.roleDialog.isShow = true
       getAll().then(response => {
@@ -466,6 +491,12 @@ export default {
         }
       )
     },
+    setOffice (staff) {
+      this.staffId = staff.id
+      this.officeDialog.officeData.name = staff.name
+      this.officeDialog.isShow = true
+      // 获取改月班次信息
+    },
     handleSetRole () {
       setRole(this.staffId, this.roleDialog.checkedData).then(
         response => {
@@ -477,9 +508,49 @@ export default {
           }
         }
       )
+    },
+    handleSetOffice () {
+      // 直接关闭
+      this.officeDialog.isShow = false
+    },
+    handleDateChange (date) {
+      // 将选取的年月传递给后端接口
+      const year = date.getFullYear()
+      const month = date.getMonth() + 1
+      this.$axios.get(`/api/calendar?year=${year}&month=${month}`)
+        .then(response => {
+          // 处理后端返回的数据
+          const markedDates = response.data.markedDates
+          // 渲染回Calendar组件中
+          this.selectedDate = markedDates.map(date => new Date(date))
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    },
+    handleDayClick (date) {
+      const clickedDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
+      // 判断当前日期是否已被标记
+      if (this.selectedDate.includes(clickedDate)) {
+        // 如果已被标记，进行修改操作
+        this.editMarkedDate(clickedDate)
+      } else {
+        // 如果未被标记，进行新增标记操作
+        this.addMarkedDate(clickedDate)
+      }
+    },
+    editMarkedDate (date) {
+      // 在这里实现修改标记日期的逻辑
+      // 可以弹出对话框或其他方式供用户进行修改操作
+      console.log('Edit marked date:', date)
+    },
+    addMarkedDate (date) {
+      // 在这里实现新增标记日期的逻辑
+      // 可以弹出对话框或其他方式供用户进行新增操作
+      console.log('Add marked date:', date)
     }
   },
-  created () {
+  created() {
     this.loading()
   }
 }
