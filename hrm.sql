@@ -11,7 +11,7 @@
  Target Server Version : 80031 (8.0.31)
  File Encoding         : 65001
 
- Date: 09/12/2023 18:46:58
+ Date: 10/12/2023 23:30:43
 */
 
 SET NAMES utf8mb4;
@@ -40,52 +40,52 @@ CREATE TABLE `att_attendance`  (
 -- ----------------------------
 -- Records of att_attendance
 -- ----------------------------
-INSERT INTO `att_attendance` VALUES (197, 1, '07:30:00', '11:30:00', '13:30:00', '18:00:00', '2022-05-09', 0, NULL, '2022-05-06 16:52:25', '2022-05-06 17:35:20', 0);
-INSERT INTO `att_attendance` VALUES (198, 1, '06:50:00', '12:00:00', '13:00:00', '17:00:16', '2022-05-10', 0, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (199, 1, '09:00:00', '10:30:00', '13:01:55', '16:00:16', '2022-05-11', 3, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (200, 2, '07:00:00', '12:35:00', '13:12:55', '19:20:16', '2022-05-09', 1, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (201, 2, '07:40:00', '12:20:00', '13:09:55', '18:10:16', '2022-05-10', 0, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (202, 2, '07:40:00', '12:30:00', NULL, '18:49:00', '2022-05-11', 0, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (203, 3, '06:12:00', '11:00:00', '13:01:55', '16:00:16', '2022-05-09', 2, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (204, 3, '07:00:00', '11:30:00', '13:30:00', '18:00:00', '2022-05-10', 3, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (205, 3, '07:20:00', '12:30:00', '13:00:00', '18:00:16', '2022-05-11', 0, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (206, 4, '09:30:00', '10:40:00', '13:10:55', '16:30:16', '2022-05-09', 3, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (207, 4, '05:00:00', '12:35:00', '13:00:55', '19:20:16', '2022-05-10', 0, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (208, 4, '05:40:00', '13:00:00', '13:00:55', '18:10:16', '2022-05-11', 0, NULL, '2022-05-06 16:52:25', '2022-05-06 16:52:25', 0);
-INSERT INTO `att_attendance` VALUES (209, 1, NULL, NULL, NULL, NULL, '2022-05-06', 0, NULL, '2022-05-06 17:35:20', '2022-05-06 17:35:20', 0);
-INSERT INTO `att_attendance` VALUES (210, 1, NULL, NULL, NULL, NULL, '2022-05-16', 0, NULL, '2022-05-06 17:38:40', '2022-05-06 17:38:40', 0);
-INSERT INTO `att_attendance` VALUES (211, 1, NULL, NULL, NULL, NULL, '2022-05-17', 1, NULL, '2022-05-06 17:38:40', '2022-05-06 17:38:40', 0);
-INSERT INTO `att_attendance` VALUES (212, 3, '07:20:00', '12:30:00', '13:00:00', '18:00:16', '2022-04-06', 0, NULL, '2022-05-06 17:54:37', '2022-05-13 15:09:39', 0);
-INSERT INTO `att_attendance` VALUES (213, 4, NULL, NULL, NULL, NULL, '2022-04-12', 0, NULL, '2022-05-06 17:54:43', '2022-05-06 17:54:43', 0);
-INSERT INTO `att_attendance` VALUES (214, 1, NULL, NULL, NULL, NULL, '2022-04-12', 2, NULL, '2022-05-06 17:54:50', '2022-05-06 17:54:50', 0);
-INSERT INTO `att_attendance` VALUES (215, 2, NULL, NULL, NULL, NULL, '2022-04-14', 1, NULL, '2022-05-06 17:54:56', '2022-05-06 17:54:56', 0);
-INSERT INTO `att_attendance` VALUES (216, 6, NULL, NULL, NULL, NULL, '2022-04-13', 3, NULL, '2022-05-06 17:55:03', '2022-05-06 17:55:03', 0);
-INSERT INTO `att_attendance` VALUES (217, 6, NULL, NULL, NULL, NULL, '2022-05-13', 2, NULL, '2022-05-06 18:05:27', '2022-05-06 18:05:27', 0);
-INSERT INTO `att_attendance` VALUES (218, 9, NULL, NULL, NULL, NULL, '2022-05-13', 1, NULL, '2022-05-06 18:05:34', '2022-05-06 18:05:34', 0);
-INSERT INTO `att_attendance` VALUES (219, 1, '06:00:00', '12:00:00', '13:00:55', '18:00:16', '2022-07-08', 1, NULL, '2022-05-12 20:50:04', '2023-02-16 07:48:16', 0);
-INSERT INTO `att_attendance` VALUES (220, 1, '09:00:00', '10:30:00', '13:01:55', '16:00:16', '2022-07-11', 1, NULL, '2022-05-12 20:50:04', '2023-02-01 21:59:35', 0);
-INSERT INTO `att_attendance` VALUES (221, 2, '06:45:00', '11:40:00', '13:10:55', '16:30:16', '2022-07-08', 1, NULL, '2022-05-12 20:50:04', '2023-02-16 07:48:16', 0);
-INSERT INTO `att_attendance` VALUES (222, 2, '07:40:00', '12:30:00', NULL, '18:49:16', '2022-07-11', 3, NULL, '2022-05-12 20:50:04', '2023-02-01 21:59:35', 0);
-INSERT INTO `att_attendance` VALUES (223, 3, '07:34:00', '12:10:00', '15:11:55', '21:00:16', '2022-07-08', 1, NULL, '2022-05-12 20:50:04', '2023-02-16 07:48:16', 0);
-INSERT INTO `att_attendance` VALUES (224, 3, '07:20:00', '12:30:00', '13:00:00', '18:00:16', '2022-07-11', 1, NULL, '2022-05-12 20:50:04', '2023-02-01 21:59:35', 0);
-INSERT INTO `att_attendance` VALUES (225, 4, '08:00:00', '11:00:00', '13:01:55', '16:00:16', '2022-07-08', 3, NULL, '2022-05-12 20:50:04', '2023-02-16 07:48:16', 0);
-INSERT INTO `att_attendance` VALUES (226, 4, '05:40:00', '13:00:00', '13:00:55', '18:10:16', '2022-07-11', 0, NULL, '2022-05-12 20:50:04', '2022-05-12 20:50:04', 0);
-INSERT INTO `att_attendance` VALUES (227, 4, NULL, NULL, NULL, NULL, '2022-04-26', 2, NULL, '2022-05-12 20:53:46', '2022-05-12 20:53:46', 0);
-INSERT INTO `att_attendance` VALUES (228, 1, NULL, NULL, NULL, NULL, '2022-04-20', 3, NULL, '2022-05-13 09:27:18', '2022-05-13 09:27:18', 0);
-INSERT INTO `att_attendance` VALUES (229, 5, NULL, NULL, NULL, NULL, '2022-05-05', 2, NULL, '2022-05-13 14:20:43', '2022-05-13 14:20:43', 0);
-INSERT INTO `att_attendance` VALUES (230, 1, '07:30:00', '11:30:00', '13:30:00', '18:00:00', '2022-04-04', 3, NULL, '2022-05-13 15:09:38', '2022-05-13 15:09:38', 0);
-INSERT INTO `att_attendance` VALUES (231, 1, '06:50:00', '12:00:00', '13:00:00', '17:00:16', '2022-04-05', 0, NULL, '2022-05-13 15:09:38', '2022-05-13 15:09:38', 0);
-INSERT INTO `att_attendance` VALUES (232, 1, '09:00:00', '10:30:00', '13:01:55', '16:00:16', '2022-04-06', 3, NULL, '2022-05-13 15:09:38', '2022-05-13 15:09:38', 0);
-INSERT INTO `att_attendance` VALUES (233, 2, '07:00:00', '12:35:00', '13:12:55', '19:20:16', '2022-04-04', 1, NULL, '2022-05-13 15:09:38', '2022-05-13 15:09:38', 0);
-INSERT INTO `att_attendance` VALUES (234, 2, '07:40:00', '12:20:00', '13:09:55', '18:10:16', '2022-04-05', 0, NULL, '2022-05-13 15:09:38', '2022-05-13 15:09:38', 0);
-INSERT INTO `att_attendance` VALUES (235, 2, '07:40:00', '12:30:00', NULL, '18:49:16', '2022-04-06', 3, NULL, '2022-05-13 15:09:38', '2022-05-13 15:09:38', 0);
-INSERT INTO `att_attendance` VALUES (236, 3, '06:12:00', '11:00:00', '13:01:55', '16:00:16', '2022-04-04', 2, NULL, '2022-05-13 15:09:39', '2022-05-13 15:09:39', 0);
-INSERT INTO `att_attendance` VALUES (237, 3, '07:00:00', '11:30:00', '13:30:00', '18:00:00', '2022-04-05', 3, NULL, '2022-05-13 15:09:39', '2022-05-13 15:09:39', 0);
-INSERT INTO `att_attendance` VALUES (238, 4, '09:30:00', '10:40:00', '13:10:55', '16:30:16', '2022-04-04', 3, NULL, '2022-05-13 15:09:40', '2022-05-13 15:09:40', 0);
-INSERT INTO `att_attendance` VALUES (239, 4, '05:00:00', '12:35:00', '13:00:55', '19:20:16', '2022-04-05', 0, NULL, '2022-05-13 15:09:40', '2022-05-13 15:09:40', 0);
-INSERT INTO `att_attendance` VALUES (240, 4, '05:40:00', '13:00:00', '13:00:55', '18:10:16', '2022-04-06', 0, NULL, '2022-05-13 15:09:40', '2022-05-13 15:09:40', 0);
-INSERT INTO `att_attendance` VALUES (241, 1, NULL, NULL, NULL, NULL, '2022-05-19', 4, NULL, '2022-05-13 15:12:39', '2022-05-13 15:12:39', 0);
-INSERT INTO `att_attendance` VALUES (242, 1, NULL, NULL, NULL, NULL, '2022-05-20', 4, NULL, '2022-05-13 15:12:39', '2022-05-13 15:12:39', 0);
+INSERT INTO `att_attendance` VALUES (197, 1, '07:30:00', '11:30:00', '13:30:00', '18:00:00', '2023-12-09', 0, NULL, '2023-12-06 16:52:25', '2023-12-06 17:35:20', 0);
+INSERT INTO `att_attendance` VALUES (198, 1, '06:50:00', '12:00:00', '13:00:00', '17:00:16', '2023-12-10', 0, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (199, 1, '09:00:00', '10:30:00', '13:01:55', '16:00:16', '2023-12-11', 3, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (200, 2, '07:00:00', '12:35:00', '13:12:55', '19:20:16', '2023-12-09', 1, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (201, 2, '07:40:00', '12:20:00', '13:09:55', '18:10:16', '2023-12-10', 0, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (202, 2, '07:40:00', '12:30:00', NULL, '18:49:00', '2023-12-11', 0, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (203, 3, '06:12:00', '11:00:00', '13:01:55', '16:00:16', '2023-12-09', 2, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (204, 3, '07:00:00', '11:30:00', '13:30:00', '18:00:00', '2023-12-10', 3, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (205, 3, '07:20:00', '12:30:00', '13:00:00', '18:00:16', '2023-12-11', 0, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (206, 4, '09:30:00', '10:40:00', '13:10:55', '16:30:16', '2023-12-09', 3, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (207, 4, '05:00:00', '12:35:00', '13:00:55', '19:20:16', '2023-12-10', 0, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (208, 4, '05:40:00', '13:00:00', '13:00:55', '18:10:16', '2023-12-11', 0, NULL, '2023-12-06 16:52:25', '2023-12-06 16:52:25', 0);
+INSERT INTO `att_attendance` VALUES (209, 1, NULL, NULL, NULL, NULL, '2023-12-06', 0, NULL, '2023-12-06 17:35:20', '2023-12-06 17:35:20', 0);
+INSERT INTO `att_attendance` VALUES (210, 1, NULL, NULL, NULL, NULL, '2023-12-16', 0, NULL, '2023-12-06 17:38:40', '2023-12-06 17:38:40', 0);
+INSERT INTO `att_attendance` VALUES (211, 1, NULL, NULL, NULL, NULL, '2023-12-17', 1, NULL, '2023-12-06 17:38:40', '2023-12-06 17:38:40', 0);
+INSERT INTO `att_attendance` VALUES (212, 3, '07:20:00', '12:30:00', '13:00:00', '18:00:16', '2023-11-06', 0, NULL, '2023-12-06 17:54:37', '2023-12-13 15:09:39', 0);
+INSERT INTO `att_attendance` VALUES (213, 4, NULL, NULL, NULL, NULL, '2023-08-12', 0, NULL, '2023-12-06 17:54:43', '2023-12-06 17:54:43', 0);
+INSERT INTO `att_attendance` VALUES (214, 1, NULL, NULL, NULL, NULL, '2023-08-12', 2, NULL, '2023-12-06 17:54:50', '2023-12-06 17:54:50', 0);
+INSERT INTO `att_attendance` VALUES (215, 2, NULL, NULL, NULL, NULL, '2023-08-14', 1, NULL, '2023-12-06 17:54:56', '2023-12-06 17:54:56', 0);
+INSERT INTO `att_attendance` VALUES (216, 6, NULL, NULL, NULL, NULL, '2023-08-13', 3, NULL, '2023-12-06 17:55:03', '2023-12-06 17:55:03', 0);
+INSERT INTO `att_attendance` VALUES (217, 6, NULL, NULL, NULL, NULL, '2023-12-13', 2, NULL, '2023-12-06 18:05:27', '2023-12-06 18:05:27', 0);
+INSERT INTO `att_attendance` VALUES (218, 9, NULL, NULL, NULL, NULL, '2023-12-13', 1, NULL, '2023-12-06 18:05:34', '2023-12-06 18:05:34', 0);
+INSERT INTO `att_attendance` VALUES (219, 1, '06:00:00', '12:00:00', '13:00:55', '18:00:16', '2023-10-08', 1, NULL, '2023-12-12 20:50:04', '2023-02-16 07:48:16', 0);
+INSERT INTO `att_attendance` VALUES (220, 1, '09:00:00', '10:30:00', '13:01:55', '16:00:16', '2023-10-11', 1, NULL, '2023-12-12 20:50:04', '2023-02-01 21:59:35', 0);
+INSERT INTO `att_attendance` VALUES (221, 2, '06:45:00', '11:40:00', '13:10:55', '16:30:16', '2023-10-08', 1, NULL, '2023-12-12 20:50:04', '2023-02-16 07:48:16', 0);
+INSERT INTO `att_attendance` VALUES (222, 2, '07:40:00', '12:30:00', NULL, '18:49:16', '2023-10-11', 3, NULL, '2023-12-12 20:50:04', '2023-02-01 21:59:35', 0);
+INSERT INTO `att_attendance` VALUES (223, 3, '07:34:00', '12:10:00', '15:11:55', '21:00:16', '2023-10-08', 1, NULL, '2023-12-12 20:50:04', '2023-02-16 07:48:16', 0);
+INSERT INTO `att_attendance` VALUES (224, 3, '07:20:00', '12:30:00', '13:00:00', '18:00:16', '2023-10-11', 1, NULL, '2023-12-12 20:50:04', '2023-02-01 21:59:35', 0);
+INSERT INTO `att_attendance` VALUES (225, 4, '08:00:00', '11:00:00', '13:01:55', '16:00:16', '2023-10-08', 3, NULL, '2023-12-12 20:50:04', '2023-02-16 07:48:16', 0);
+INSERT INTO `att_attendance` VALUES (226, 4, '05:40:00', '13:00:00', '13:00:55', '18:10:16', '2023-10-11', 0, NULL, '2023-12-12 20:50:04', '2023-12-12 20:50:04', 0);
+INSERT INTO `att_attendance` VALUES (227, 4, NULL, NULL, NULL, NULL, '2023-08-26', 2, NULL, '2023-12-12 20:53:46', '2023-12-12 20:53:46', 0);
+INSERT INTO `att_attendance` VALUES (228, 1, NULL, NULL, NULL, NULL, '2023-08-20', 3, NULL, '2023-12-13 09:27:18', '2023-12-13 09:27:18', 0);
+INSERT INTO `att_attendance` VALUES (229, 5, NULL, NULL, NULL, NULL, '2023-12-05', 2, NULL, '2023-12-13 14:20:43', '2023-12-13 14:20:43', 0);
+INSERT INTO `att_attendance` VALUES (230, 1, '07:30:00', '11:30:00', '13:30:00', '18:00:00', '2023-08-04', 3, NULL, '2023-12-13 15:09:38', '2023-12-13 15:09:38', 0);
+INSERT INTO `att_attendance` VALUES (231, 1, '06:50:00', '12:00:00', '13:00:00', '17:00:16', '2023-08-05', 0, NULL, '2023-12-13 15:09:38', '2023-12-13 15:09:38', 0);
+INSERT INTO `att_attendance` VALUES (232, 1, '09:00:00', '10:30:00', '13:01:55', '16:00:16', '2023-08-06', 3, NULL, '2023-12-13 15:09:38', '2023-12-13 15:09:38', 0);
+INSERT INTO `att_attendance` VALUES (233, 2, '07:00:00', '12:35:00', '13:12:55', '19:20:16', '2023-08-04', 1, NULL, '2023-12-13 15:09:38', '2023-12-13 15:09:38', 0);
+INSERT INTO `att_attendance` VALUES (234, 2, '07:40:00', '12:20:00', '13:09:55', '18:10:16', '2023-08-05', 0, NULL, '2023-12-13 15:09:38', '2023-12-13 15:09:38', 0);
+INSERT INTO `att_attendance` VALUES (235, 2, '07:40:00', '12:30:00', NULL, '18:49:16', '2023-08-06', 3, NULL, '2023-12-13 15:09:38', '2023-12-13 15:09:38', 0);
+INSERT INTO `att_attendance` VALUES (236, 3, '06:12:00', '11:00:00', '13:01:55', '16:00:16', '2023-08-04', 2, NULL, '2023-12-13 15:09:39', '2023-12-13 15:09:39', 0);
+INSERT INTO `att_attendance` VALUES (237, 3, '07:00:00', '11:30:00', '13:30:00', '18:00:00', '2023-08-05', 3, NULL, '2023-12-13 15:09:39', '2023-12-13 15:09:39', 0);
+INSERT INTO `att_attendance` VALUES (238, 4, '09:30:00', '10:40:00', '13:10:55', '16:30:16', '2023-08-04', 3, NULL, '2023-12-13 15:09:40', '2023-12-13 15:09:40', 0);
+INSERT INTO `att_attendance` VALUES (239, 4, '05:00:00', '12:35:00', '13:00:55', '19:20:16', '2023-08-05', 0, NULL, '2023-12-13 15:09:40', '2023-12-13 15:09:40', 0);
+INSERT INTO `att_attendance` VALUES (240, 4, '05:40:00', '13:00:00', '13:00:55', '18:10:16', '2023-08-06', 0, NULL, '2023-12-13 15:09:40', '2023-12-13 15:09:40', 0);
+INSERT INTO `att_attendance` VALUES (241, 1, NULL, NULL, NULL, NULL, '2023-12-19', 4, NULL, '2023-12-13 15:12:39', '2023-12-13 15:12:39', 0);
+INSERT INTO `att_attendance` VALUES (242, 1, NULL, NULL, NULL, NULL, '2023-12-20', 4, NULL, '2023-12-13 15:12:39', '2023-12-13 15:12:39', 0);
 INSERT INTO `att_attendance` VALUES (247, 1, NULL, NULL, NULL, NULL, '2023-01-01', 2, NULL, '2023-01-02 13:50:02', '2023-01-02 13:50:02', 0);
 INSERT INTO `att_attendance` VALUES (250, 1, NULL, NULL, NULL, NULL, '2023-01-02', 1, NULL, '2023-01-25 21:13:29', '2023-01-25 21:13:29', 0);
 INSERT INTO `att_attendance` VALUES (251, 3, NULL, NULL, NULL, NULL, '2023-01-04', 4, NULL, '2023-01-25 21:17:59', '2023-01-25 21:17:59', 0);
@@ -334,7 +334,7 @@ CREATE TABLE `per_staff_role`  (
 -- ----------------------------
 -- Records of per_staff_role
 -- ----------------------------
-INSERT INTO `per_staff_role` VALUES (1, 1, 1, 1, '2022-03-02 16:13:59', '2022-03-20 12:56:12', 0);
+INSERT INTO `per_staff_role` VALUES (1, 1, 1, 1, '2022-03-02 16:13:59', '2023-12-09 20:57:15', 0);
 INSERT INTO `per_staff_role` VALUES (2, 29, 2, 1, '2022-03-04 15:11:38', '2022-03-20 12:21:47', 0);
 INSERT INTO `per_staff_role` VALUES (3, 29, 3, 1, '2022-03-04 15:11:39', '2022-03-20 12:21:51', 0);
 INSERT INTO `per_staff_role` VALUES (4, 3, 3, 0, '2022-03-11 11:03:43', '2022-12-29 11:58:29', 0);
@@ -531,26 +531,26 @@ CREATE TABLE `sys_dept`  (
 -- ----------------------------
 -- Records of sys_dept
 -- ----------------------------
-INSERT INTO `sys_dept` VALUES (1, NULL, '运营部门', NULL, NULL, NULL, NULL, NULL, NULL, 0, '2022-03-07 16:15:57', '2023-12-09 16:33:12', 0);
-INSERT INTO `sys_dept` VALUES (2, NULL, '运营1部', '08:30:00', '11:30:00', '13:00:00', '18:00:00', 8.0, '核心部门', 1, '2022-03-07 16:16:11', '2023-12-09 16:33:14', 0);
-INSERT INTO `sys_dept` VALUES (3, NULL, '运营2部', '08:30:00', '11:30:00', '13:30:00', '18:30:00', 8.0, NULL, 1, '2022-03-07 16:16:30', '2023-12-09 16:33:16', 0);
-INSERT INTO `sys_dept` VALUES (4, NULL, '销售部门', NULL, NULL, NULL, NULL, NULL, NULL, 0, '2022-03-07 16:16:46', '2022-05-06 16:23:09', 0);
-INSERT INTO `sys_dept` VALUES (5, NULL, '销售1部', '06:00:00', '10:00:00', '13:00:00', '16:30:00', 7.5, NULL, 4, '2022-03-07 16:16:57', '2022-05-06 16:23:26', 0);
-INSERT INTO `sys_dept` VALUES (6, NULL, '销售2部', '06:00:00', '10:30:00', '13:30:00', '17:00:00', 8.0, NULL, 4, '2022-03-07 16:17:10', '2022-05-06 16:23:37', 0);
-INSERT INTO `sys_dept` VALUES (7, NULL, '财务部门', NULL, NULL, NULL, NULL, NULL, '财务', 0, '2022-03-07 16:17:40', '2022-05-06 16:24:09', 0);
-INSERT INTO `sys_dept` VALUES (8, NULL, '财务1部', '06:00:00', '10:00:00', '14:00:00', '18:00:00', 8.0, NULL, 7, '2022-03-07 16:17:49', '2022-03-07 16:18:11', 0);
-INSERT INTO `sys_dept` VALUES (9, NULL, '财务2部', '06:00:00', '10:00:00', '13:00:00', '16:30:00', 7.5, NULL, 7, '2022-03-07 16:18:02', '2022-03-07 16:18:14', 0);
-INSERT INTO `sys_dept` VALUES (10, NULL, '财务3部', '06:00:00', '11:30:00', '13:00:00', '16:30:00', 9.0, NULL, 7, '2022-03-07 16:18:32', '2023-12-09 16:37:43', 1);
-INSERT INTO `sys_dept` VALUES (11, NULL, '市场部门', NULL, NULL, NULL, NULL, NULL, NULL, 0, '2022-03-07 16:18:41', '2023-12-09 16:33:53', 0);
-INSERT INTO `sys_dept` VALUES (12, NULL, '市场1部', '08:00:00', '12:00:00', '13:30:00', '18:30:00', 9.0, NULL, 11, '2022-03-07 16:19:00', '2023-12-09 16:33:54', 0);
-INSERT INTO `sys_dept` VALUES (13, NULL, '市场2部', '08:30:00', '12:00:00', '13:30:00', '18:30:00', 8.5, NULL, 11, '2022-03-07 22:21:39', '2022-03-07 22:21:39', 0);
-INSERT INTO `sys_dept` VALUES (14, NULL, '财务4部', '06:00:00', '10:30:00', '14:30:00', '18:00:00', 8.0, NULL, 7, '2022-03-20 12:08:16', '2023-12-09 16:37:42', 1);
-INSERT INTO `sys_dept` VALUES (15, NULL, '运维3部', '06:00:00', '12:00:00', '13:30:00', '18:00:00', 10.5, NULL, 1, '2022-03-26 17:09:55', '2023-12-09 16:34:14', 1);
-INSERT INTO `sys_dept` VALUES (16, NULL, '人事部门', NULL, NULL, NULL, NULL, NULL, '人力资源管理', 0, '2022-03-26 17:13:01', '2022-05-02 22:22:30', 0);
-INSERT INTO `sys_dept` VALUES (17, NULL, '人事1部', '08:00:00', '12:00:00', '13:30:00', '17:30:00', 8.0, NULL, 16, '2022-03-26 17:17:26', '2022-04-08 12:51:21', 0);
-INSERT INTO `sys_dept` VALUES (18, NULL, '人事2部', '08:00:00', '11:40:00', '13:40:00', '18:00:00', 8.0, NULL, 16, '2022-12-29 22:17:00', '2022-12-29 22:32:26', 0);
-INSERT INTO `sys_dept` VALUES (19, NULL, '人事3部', '09:00:00', '12:10:00', '13:10:00', '18:00:00', 8.0, NULL, 16, '2022-12-29 22:17:31', '2022-12-29 22:32:30', 0);
-INSERT INTO `sys_dept` VALUES (20, NULL, '运维4部', '06:00:00', '11:00:00', '13:00:00', '17:30:00', 9.5, NULL, 1, '2023-02-17 22:16:33', '2023-12-09 16:34:17', 1);
+INSERT INTO `sys_dept` VALUES (1, NULL, '运营部门', NULL, NULL, NULL, NULL, NULL, NULL, 0, '2023-12-08 16:15:57', '2023-12-10 18:51:59', 0);
+INSERT INTO `sys_dept` VALUES (2, NULL, '运营1部', '08:30:00', '11:30:00', '13:00:00', '18:00:00', 8.0, '核心部门', 1, '2023-12-08 16:16:11', '2023-12-10 18:52:08', 0);
+INSERT INTO `sys_dept` VALUES (3, NULL, '运营2部', '08:30:00', '11:30:00', '13:30:00', '18:30:00', 8.0, NULL, 1, '2023-12-08 16:16:30', '2023-12-10 18:52:13', 0);
+INSERT INTO `sys_dept` VALUES (4, NULL, '销售部门', NULL, NULL, NULL, NULL, NULL, NULL, 0, '2023-12-08 16:16:46', '2023-12-10 18:52:25', 0);
+INSERT INTO `sys_dept` VALUES (5, NULL, '销售1部', '06:00:00', '10:00:00', '13:00:00', '16:30:00', 7.5, NULL, 4, '2023-12-08 16:16:57', '2023-12-10 18:52:29', 0);
+INSERT INTO `sys_dept` VALUES (6, NULL, '销售2部', '06:00:00', '10:30:00', '13:30:00', '17:00:00', 8.0, NULL, 4, '2023-12-08 16:17:10', '2023-12-10 18:52:34', 0);
+INSERT INTO `sys_dept` VALUES (7, NULL, '财务部门', NULL, NULL, NULL, NULL, NULL, '财务', 0, '2023-12-08 16:17:40', '2023-12-10 18:52:39', 0);
+INSERT INTO `sys_dept` VALUES (8, NULL, '财务1部', '06:00:00', '10:00:00', '14:00:00', '18:00:00', 8.0, NULL, 7, '2023-12-08 16:17:49', '2023-12-10 18:52:43', 0);
+INSERT INTO `sys_dept` VALUES (9, NULL, '财务2部', '06:00:00', '10:00:00', '13:00:00', '16:30:00', 7.5, NULL, 7, '2023-12-09 16:18:02', '2023-12-10 18:52:48', 0);
+INSERT INTO `sys_dept` VALUES (10, NULL, '财务3部', '06:00:00', '11:30:00', '13:00:00', '16:30:00', 9.0, NULL, 7, '2023-12-09 16:18:32', '2023-12-10 18:52:53', 1);
+INSERT INTO `sys_dept` VALUES (11, NULL, '市场部门', NULL, NULL, NULL, NULL, NULL, NULL, 0, '2023-12-09 16:18:41', '2023-12-10 18:52:57', 0);
+INSERT INTO `sys_dept` VALUES (12, NULL, '市场1部', '08:00:00', '12:00:00', '13:30:00', '18:30:00', 9.0, NULL, 11, '2023-12-09 16:19:00', '2023-12-10 18:53:01', 0);
+INSERT INTO `sys_dept` VALUES (13, NULL, '市场2部', '08:30:00', '12:00:00', '13:30:00', '18:30:00', 8.5, NULL, 11, '2023-12-09 22:21:39', '2023-12-10 18:53:05', 0);
+INSERT INTO `sys_dept` VALUES (14, NULL, '财务4部', '06:00:00', '10:30:00', '14:30:00', '18:00:00', 8.0, NULL, 7, '2023-12-09 12:08:16', '2023-12-10 18:53:09', 1);
+INSERT INTO `sys_dept` VALUES (15, NULL, '运维3部', '06:00:00', '12:00:00', '13:30:00', '18:00:00', 10.5, NULL, 1, '2023-12-09 17:09:55', '2023-12-10 18:53:13', 1);
+INSERT INTO `sys_dept` VALUES (16, NULL, '人事部门', NULL, NULL, NULL, NULL, NULL, '人力资源管理', 0, '2023-12-09 17:13:01', '2023-12-10 18:53:18', 0);
+INSERT INTO `sys_dept` VALUES (17, NULL, '人事1部', '08:00:00', '12:00:00', '13:30:00', '17:30:00', 8.0, NULL, 16, '2023-12-09 17:17:26', '2023-12-10 18:53:22', 0);
+INSERT INTO `sys_dept` VALUES (18, NULL, '人事2部', '08:00:00', '11:40:00', '13:40:00', '18:00:00', 8.0, NULL, 16, '2023-12-09 22:17:00', '2023-12-10 18:53:27', 0);
+INSERT INTO `sys_dept` VALUES (19, NULL, '人事3部', '09:00:00', '12:10:00', '13:10:00', '18:00:00', 8.0, NULL, 16, '2023-12-09 22:17:31', '2023-12-10 18:53:32', 0);
+INSERT INTO `sys_dept` VALUES (20, NULL, '运维4部', '06:00:00', '11:00:00', '13:00:00', '17:30:00', 9.5, NULL, 1, '2023-12-09 22:16:33', '2023-12-10 18:53:38', 1);
 
 -- ----------------------------
 -- Table structure for sys_docs
@@ -627,6 +627,43 @@ INSERT INTO `sys_docs` VALUES (50, 'b6288dc6084cb699385c.png', 'png', '微信图
 INSERT INTO `sys_docs` VALUES (51, '9ee44e0dc945e5a41828.jpg', 'jpg', 'p19.jpg', '176b8a51e4f96c3dcd6806bbdf9de678', 5, 1, NULL, '2023-02-14 21:52:36', '2023-02-14 21:52:36', 0);
 
 -- ----------------------------
+-- Table structure for sys_item
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_item`;
+CREATE TABLE `sys_item`  (
+  `id` int NOT NULL COMMENT '商品id',
+  `item_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '商品名称',
+  `item_img` varchar(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '商品图片',
+  `item_nums` int NULL DEFAULT NULL COMMENT '商品库存',
+  `item_price` decimal(10, 2) NULL DEFAULT NULL COMMENT '商品单价',
+  `item_warehouse` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '仓库位置',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of sys_item
+-- ----------------------------
+INSERT INTO `sys_item` VALUES (1, '手机', 'https://t13.baidu.com/it/u=599198227,3515971765&fm=224&app=112&size=h200&n=0&f=JPEG&fmt=auto?sec=1702314000&t=fa859dc28e72e79ea70369329bd569b1', 20, 1999.99, '仓库A');
+INSERT INTO `sys_item` VALUES (2, '电视', 'https://img1.360buyimg.com/n6/jfs/t1/237708/36/6181/89334/65740e08F5bac0985/21ca9ee6cac15e1a.jpg', 5, 2999.99, '仓库B');
+INSERT INTO `sys_item` VALUES (3, '笔记本电脑', 'https://img1.360buyimg.com/n6/jfs/t1/237238/39/6836/110654/6573e081Fd3ecefc5/7d258c6f775fc49e.jpg', 15, 5999.99, '仓库C');
+INSERT INTO `sys_item` VALUES (4, '耳机', 'https://img1.360buyimg.com/n6/jfs/t1/92051/12/36364/40641/6569b2f5F37b3bcd6/fbe20aa2597f8ae6.jpg', 40, 299.99, '仓库A');
+INSERT INTO `sys_item` VALUES (5, '平板电脑', 'https://img1.360buyimg.com/n6/jfs/t1/228052/38/7304/33867/6572e6a6F92e35663/e02d69e9c74a10f2.jpg', 8, 1999.99, '仓库B');
+INSERT INTO `sys_item` VALUES (6, '相机', 'https://img1.360buyimg.com/n6/jfs/t1/197863/31/38715/78113/6572eb38Fc3c880f8/50bdb886ec9b086c.jpg', 12, 3999.99, '仓库C');
+INSERT INTO `sys_item` VALUES (7, '音箱', 'https://img1.360buyimg.com/n6/jfs/t1/237417/33/6144/55411/65727495F8479308f/ae5e33714506033f.jpg', 3, 999.99, '仓库A');
+INSERT INTO `sys_item` VALUES (8, '洗衣机', 'https://img1.360buyimg.com/n6/jfs/t1/231584/24/6982/138635/6572f586F338074c0/363f3c59cdeca58c.jpg', 18, 1999.99, '仓库B');
+INSERT INTO `sys_item` VALUES (9, '冰箱', 'https://img1.360buyimg.com/n6/jfs/t1/191668/19/40455/58913/656dc4cbF77053808/83f2dcb47b0bf1b1.jpg', 6, 3999.99, '仓库C');
+INSERT INTO `sys_item` VALUES (10, '空调', 'https://img1.360buyimg.com/n6/jfs/t1/222772/39/35435/60889/6572da1fF53315875/f31e216c9c6a7037.jpg', 25, 4999.99, '仓库A');
+INSERT INTO `sys_item` VALUES (11, '微波炉', 'https://img1.360buyimg.com/n6/jfs/t1/231826/27/6962/177544/6572be5aFc91165db/7185bf7e45013402.jpg', 4, 299.99, '仓库B');
+INSERT INTO `sys_item` VALUES (12, '电风扇', 'https://img1.360buyimg.com/n6/jfs/t1/142917/7/36701/81087/649a8959Fc313fe9a/9a272e2c2bb2022d.jpg', 16, 199.99, '仓库C');
+INSERT INTO `sys_item` VALUES (13, '吸尘器', 'https://img1.360buyimg.com/n6/jfs/t1/177183/26/41153/66927/657194d8F533f28dd/7a44407355b4ea0e.jpg', 2, 599.99, '仓库A');
+INSERT INTO `sys_item` VALUES (14, '咖啡机', 'https://img1.360buyimg.com/n6/jfs/t1/151509/40/32614/98763/6574614bF8897232d/cb7271945d5c488e.jpg', 22, 999.99, '仓库B');
+INSERT INTO `sys_item` VALUES (15, '电饭煲', 'https://img1.360buyimg.com/n6/jfs/t1/231893/33/6999/123198/6574658dFb9a481a2/c6e7fcf3188fe334.jpg', 12, 399.99, '仓库C');
+INSERT INTO `sys_item` VALUES (16, '电动牙刷', 'https://img1.360buyimg.com/n6/jfs/t1/224793/15/5687/55877/65686ba2Fc5a67ff2/9fe8311d55a52b68.jpg', 9, 199.99, '仓库A');
+INSERT INTO `sys_item` VALUES (17, '电动剃须刀', 'https://img1.360buyimg.com/n6/jfs/t1/232118/16/6947/102300/657461acF3cbd1348/b24382f1ecb1ee9f.png', 14, 499.99, '仓库B');
+INSERT INTO `sys_item` VALUES (18, '电动车', 'https://img1.360buyimg.com/n6/jfs/t1/235767/12/6978/100455/657423d7F13ef9224/bf597e4c78fbf0fc.jpg', 11, 2999.99, '仓库C');
+INSERT INTO `sys_item` VALUES (907128833, '无线路由器', 'https://img1.360buyimg.com/n6/jfs/t1/223618/6/39681/69899/6572e48fF69418ee8/de6154f2c98b580d.jpg', 10, 199.00, '仓库B');
+
+-- ----------------------------
 -- Table structure for sys_staff
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_staff`;
@@ -652,9 +689,9 @@ CREATE TABLE `sys_staff`  (
 -- ----------------------------
 -- Records of sys_staff
 -- ----------------------------
-INSERT INTO `sys_staff` VALUES (1, 'admin', 'admin', 0, '202CB7007152D234B962AC59075B964B', '9ee44e0dc945e5a41828.jpg', '2000-12-05', '13991849313', '上海', '', 12, 1, '2022-01-22 19:46:27', '2023-12-09 16:40:18', 0);
+INSERT INTO `sys_staff` VALUES (1, 'admin', 'admin', 0, '202CB7007152D234B962AC59075B964B', '9ee44e0dc945e5a41828.jpg', '2000-12-06', '13888888888', '上海', '', 12, 1, '2022-01-22 19:46:27', '2023-12-10 18:50:58', 0);
 INSERT INTO `sys_staff` VALUES (2, 'staff_2', 'lucy', 1, '202CB7007152D234B962AC59075B964B', '', '1998-04-17', '', '长沙', NULL, 5, 1, '2022-02-22 19:47:58', '2023-02-03 07:56:30', 0);
-INSERT INTO `sys_staff` VALUES (3, 'staff_3', '清河', 0, '202CB7007152D234B962AC59075B964B', '', '1996-12-14', '15808425011', '南京', NULL, 9, 1, '2022-12-22 19:48:47', '2023-02-03 09:14:01', 0);
+INSERT INTO `sys_staff` VALUES (3, 'staff_3', '清河', 0, '202CB7007152D234B962AC59075B964B', '', '1996-12-14', '13888888880', '南京', NULL, 9, 1, '2022-12-22 19:48:47', '2023-12-10 18:51:12', 0);
 INSERT INTO `sys_staff` VALUES (4, 'staff_4', 'john', 0, '202CB7007152D234B962AC59075B964B', '', '1996-12-05', NULL, NULL, '博士', 3, 0, '2022-10-22 19:49:42', '2023-12-09 15:16:51', 0);
 INSERT INTO `sys_staff` VALUES (5, 'staff_5', 'joy', 0, '202CB7007152D234B962AC59075B964B', '', '1997-01-01', NULL, NULL, NULL, 17, 0, '2022-01-27 14:32:37', '2023-02-03 09:14:05', 0);
 INSERT INTO `sys_staff` VALUES (6, 'staff_6', 'harden', 0, '202CB7007152D234B962AC59075B964B', '', '1996-06-01', NULL, NULL, '硕士', 17, 1, '2022-01-27 14:36:17', '2023-02-03 09:14:10', 0);
@@ -689,5 +726,46 @@ INSERT INTO `sys_staff` VALUES (34, 'staff_34', '李四', 0, '827CE7BA16891F84CB
 INSERT INTO `sys_staff` VALUES (35, 'staff_35', '王五', 0, '827CE7BA16891F84CB0EEA8A706C4C34', 'avatar.png', NULL, '13991849316', '上海', NULL, 5, 1, '2022-03-20 16:57:01', '2022-05-06 18:01:02', 0);
 INSERT INTO `sys_staff` VALUES (36, 'staff_36', 'harden', 0, '202CB7007152D234B962AC59075B964B', 'avatar.png', NULL, NULL, NULL, NULL, 13, 1, '2022-12-28 21:18:12', '2023-12-09 16:05:18', 1);
 INSERT INTO `sys_staff` VALUES (37, 'staff_37', '李云龙', 0, '202CB7007152D234B962AC59075B964B', 'avatar.png', '1989-07-12', '13990839927', '平安县', '独立团团长', 19, 1, '2023-01-09 22:58:36', '2023-02-15 09:55:00', 0);
+
+-- ----------------------------
+-- Table structure for sys_stock
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_stock`;
+CREATE TABLE `sys_stock`  (
+  `id` int NOT NULL COMMENT '进货表id',
+  `item_id` int NULL DEFAULT NULL COMMENT '商品id',
+  `item_nums` int NULL DEFAULT NULL COMMENT '进货数量',
+  `stock_date` datetime NULL DEFAULT NULL COMMENT '进货时间',
+  `item_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '商品名称',
+  `stock_price` decimal(10, 2) NULL DEFAULT NULL COMMENT '进货单价',
+  `stock_sum_price` decimal(10, 2) NULL DEFAULT NULL COMMENT '进货总价',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of sys_stock
+-- ----------------------------
+INSERT INTO `sys_stock` VALUES (-380547070, 4, 20, '2023-12-10 23:22:53', '耳机', 79.00, 1580.00);
+
+-- ----------------------------
+-- Table structure for sys_work
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_work`;
+CREATE TABLE `sys_work`  (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `staff_id` int NULL DEFAULT NULL,
+  `work_date` datetime NULL DEFAULT NULL,
+  `work_msg` int NULL DEFAULT NULL,
+  `work_staff_id` int NULL DEFAULT NULL COMMENT '值班时间 1上午 2下午 3晚上',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1913753603 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of sys_work
+-- ----------------------------
+INSERT INTO `sys_work` VALUES (-1538240510, 1, '2023-12-07 08:00:00', 2, 1);
+INSERT INTO `sys_work` VALUES (3, 1, '2023-12-06 00:00:00', 3, 1);
+INSERT INTO `sys_work` VALUES (491802626, 2, '2023-12-07 08:00:00', 3, 1);
+INSERT INTO `sys_work` VALUES (516968449, 1, '2023-12-01 08:00:00', 2, 1);
 
 SET FOREIGN_KEY_CHECKS = 1;

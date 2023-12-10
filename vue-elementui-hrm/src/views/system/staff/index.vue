@@ -100,7 +100,7 @@
       <div style="margin-bottom: 10px">当前用户：{{ officeDialog.officeData.name }}</div>
       <!--  日历    -->
       <div class="calendar">
-        <schedule-calendar :month="currentMonth" :staff="selectedStaff"></schedule-calendar>
+        <schedule-calendar :month="currentMonth" :staff="selectedStaff" :isShowSelect="isShowSelect"></schedule-calendar>
         <span slot="footer" class="dialog-footer">
       </span>
       </div>
@@ -110,18 +110,6 @@
         <el-button type="primary" @click="handleSetOffice">确定</el-button>
       </div>
     </el-dialog>
-
-<!--    <el-dialog title="排版详情" :visible.sync="officeDetailDialog.isShow">
-      &lt;!&ndash;  当前行的用户姓名 &ndash;&gt;
-      <div style="margin-bottom: 10px">当前用户：{{ officeDialog.officeData.name }}</div>
-      <div>
-        &lt;!&ndash;        &ndash;&gt;
-      </div>
-      <div slot="footer" class="dialog-footer">
-        <el-button @click="officeDetailDialog.isShow = false">取消</el-button>
-        <el-button type="primary" @click="officeDetailDialog.isShow = false">确定</el-button>
-      </div>
-    </el-dialog>-->
 
     <div style="margin-bottom: 10px">
       <el-upload :action="importApi" :headers="headers" accept="xlsx" :show-file-list="false"
@@ -346,6 +334,7 @@ export default {
         id:0
       },
       currentMonth: new Date(),
+      isShowSelect: true,
       scheduleDialogVisible: false
     }
   },
@@ -360,6 +349,9 @@ export default {
     importApi() {
       return getImportApi()
     }
+  },
+  mounted() {
+    this.loading()
   },
   methods: {
     getDept() {

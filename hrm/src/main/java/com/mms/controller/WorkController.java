@@ -5,10 +5,7 @@ import com.mms.dto.ResponseDTO;
 import com.mms.entity.Work;
 import com.mms.service.WorkService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/work")
@@ -31,6 +28,14 @@ public class WorkController {
     @PostMapping("/getWork")
     public ResponseDTO getWork(@RequestBody GetWorkDTO getWorkDTO) {
         return workService.getWork(getWorkDTO);
+    }
+
+    /**
+     * 3.删除排班
+     */
+    @DeleteMapping("/deleteWork/{id}")
+    public ResponseDTO deleteWork(@PathVariable("id") Integer id) {
+        return workService.deleteWork(id);
     }
 
 }

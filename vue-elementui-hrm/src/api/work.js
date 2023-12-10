@@ -7,7 +7,7 @@ const url = '/work'
  * @param data
  * @returns {AxiosPromise}
  */
-export const add = (data) => {
+export const addWork = (data) => {
   return request({
     url: url + '/addWork',
     method: 'post',
@@ -23,5 +23,14 @@ export const getWork = (data) => {
     url: url + '/getWork',
     method: 'post',
     data
+  })
+}
+
+/**
+ * 删除排班
+ */
+export const deleteWork = (id) => {
+  return request({
+    url: url + '/deleteWork/' + id, method: 'delete'
   })
 }
