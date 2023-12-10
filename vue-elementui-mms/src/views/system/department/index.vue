@@ -277,7 +277,7 @@
         <el-table-column prop="aftEndTime" label="下午下班时间" min-width="125" align="center"/>
         <el-table-column prop="totalWorkTime" label="工作时长（H）" min-width="125" align="center"/>
         <el-table-column prop="remark" label="备注" min-width="200" align="center"/>
-        <el-table-column label="操作" width="280" fixed="right" align="center">
+        <el-table-column label="操作" width="350" fixed="right" align="center">
           <template slot-scope="scope">
             <el-button size="mini" v-if="scope.row.parentId === 0" type="primary" @click="handleEdit(scope.row)"
             >编辑 <i class="el-icon-edit"></i

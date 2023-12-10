@@ -179,7 +179,8 @@ export default {
         formData: {},
         deptList: []
       },
-      items:[]
+      items:[],
+      staff:{}
     }
   },
   filters: {

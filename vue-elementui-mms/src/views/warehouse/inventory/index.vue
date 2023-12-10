@@ -179,6 +179,9 @@ export default {
         type: '',
         formData: {},
         deptList: []
+      },
+      staff:{
+
       }
     }
   },
@@ -190,7 +193,10 @@ export default {
     // 获取导入数据的接口
     importApi() {
       return getImportApi()
-    }
+    },
+
+  },
+  mounted() {
 
   },
   methods: {

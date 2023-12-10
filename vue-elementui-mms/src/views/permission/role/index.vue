@@ -115,7 +115,7 @@
         <el-table-column prop="code" label="编号" min-width="80" align="center"/>
         <el-table-column prop="name" label="职称" min-width="80" align="center"/>
         <el-table-column prop="remark" label="备注" min-width="200" align="center"/>
-        <el-table-column label="操作" width="280" fixed="right" align="center">
+        <el-table-column label="操作" width="350" fixed="right" align="center">
           <template slot-scope="scope">
             <el-button size="mini" type="primary" @click="handleEdit(scope.row)"
             >编辑 <i class="el-icon-edit"></i
